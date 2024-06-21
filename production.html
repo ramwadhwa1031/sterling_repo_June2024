@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 
 <head>
@@ -30,10 +30,25 @@
     <link rel="stylesheet" href="assets/css/default.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"><link rel="stylesheet" href="./style.css">
 <link rel="stylesheet" href="assets/css/main.css">
+<script type="text/javascript">
+    function greeting(){
+        alert("Your Query Submitted Successfully! Contact You Shortly");
+        location.reload();
+    }
+   
+</script>
 
 </head>
 
 <body>
+    
+    <div class="cookies-eu-banner hidden">
+        By clicking ”OK”, you agree to the storing of cookies on your device to
+        enhance site navigation, analyze site usage, and improve marketing.
+        <button>Accept</button>
+      </div>
+      
+    
 <div class="whats-float">
 		<a href="https://wa.me/4407747274957?text=Hi!"
 		   target="_blank">
@@ -172,6 +187,7 @@
     </div>
 </div>
 </header>
+
 <!-- Fullscreen search -->
 <div class="search-wrap">
     <div class="search-inner">
@@ -190,12 +206,12 @@
 <!-- header area end here -->
 
 <!-- page title area start -->
-<div class="page-title__area pt-110" style="background-image: url(assets/img/about-us/support_bann.jpg);">
+<div class="page-title__area pt-110" style="background-image: url(assets/img/about-us/reg.jpg);">
     <div class="container">
         <div class="row">
            <div class="col-xxl-12">
               <div class="page__title-wrapper text-center">
-                 <h3 class="pb-100">About Us </h3>
+                 <h3 class="pb-100">Production Operative </h3>
               </div>
            </div>
         </div>
@@ -204,233 +220,85 @@
         <ul class="breadcrumb justify-content-center pt-20 pb-20">
            <li class="bd-items"><a href="index.html">Home</a></li>
            <li class="bd-items bdritems">|</li>
-           <li class="bd-items"> <a href="about.html"> About Us</a></li>
+           <li class="bd-items"> <a href="">Production Operative</a></li>
         </ul>
      </nav>
 </div>
  <!-- page title area end -->
 
  <main>
-<!-- About-us area start here -->
-<section class="about-area-2 pt-120 pb-80">
+
+<!-- Contact  area start -->
+<div class="contact__area">
     <div class="container">
         <div class="row">
-            <div class="col-xxl-6 col-xl-6 col-lg-6 mb-30 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-                <div class="about2-left d-flex">
-                    <div class="about2-left__img1 mr-10">
-                        <img src="assets/img/about-2/about2.jpg" alt="">
-                    </div>
-                    <div class="about2-left__img2">
-                        <img src="assets/img/about-2/about2-1.jpg" alt="">
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-xxl-6 col-xl-6 col-lg-6 mb-30 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-                <div class="section_title_wrapper">
-                    <span class="subtitle">
-                        About Sterling Staffing
-                    </span>                       
-                    <h2 class="section-title about-span mb-30">
-                        <span>11+</span>  Years of Your Trust <br> and Recommendation
+            <div class="col-xxl-12 col-xl-12 col-lg-12"></div>
+            <div class="col-xl-12 col-xl-12 col-lg-12">
+                <div class="contact__form pt-110">
+                    <h2 class="contact-form__title">
+                        Employer <span> Details</span>
                     </h2>
-                    <div class="section_title_wrapper__about-content mb-40">
-                        <p>Sterling Staffing Ltd was launched, in 2012, we have been in the recruitment industry since then. Numerous students have been hired by us for UK universities.The Sterling Staffing team is now in health care recruitment sector to offer highly qualified healthcare personnel on demand to clients like care facilities, clinics, and supported living services.</p>
-                        <p> In addition, We help clients save money while achieving their business goals and objectives, we are a client-focused and results-driven staffing agency that provides quality staffing. We also assist employees in increasing their productivity and quality of life.</p>
-                    </div>
-                </div>
-                <div class="about-trust">
-                    <div class="row mb-10">
-                        <div class="col-lg-6">
-                            <div class="about2__item d-flex  mb-20">
-                                <div class="about2__icon">
-                                    <i class="flaticon-fair-trade"></i>
-                                </div>
-                                <div class="about2__content">
-                                    <h4>Trusted by Millions</h4>
-                                    <p>Most trusted & recommended</p>
-                                </div>
+                    <form id="contact-form" action="" onsubmit="greeting()">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <input name="name" class="contact__input" type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-xl-12">
+                                <input name="email" class="contact__input" type="email" placeholder="Your Email" required>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="about2__item d-flex  mb-20">
-                                <div class="about2__icon">
-                                    <i class="flaticon-trophy"></i>
-                                </div>
-                                <div class="about2__content">
-                                    <h4>Awards Winner</h4>
-                                    <p>Most trusted & recommended </p>
-                                </div>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <input name="Profession" class="contact__input" type="text" placeholder="Phone" required>
+                            </div>
+                           
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <select class="contact__input" name="Profession">
+                                    <option value="" disabled selected>Profession....</option>
+                                    <option value="">Fitter</option>
+                                    <option value="">Welder</option>
+                                    <option value="">Special Skill</option>
+                                    <option value="">Others</option>
+                                    
+                                </select>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- About-us area end here -->
-
-
-<!-- Histry Tabs area end here -->
-
-
- <!-- About- Tabs area end here -->
- 
-<!-- Ab-fact-area start -->
-
-<div class="abfact-area pt-80 pb-170" style="background-image: url(assets/img/ab-fact/abfact.jpg);">
-    <div class="container">
-        <div class="row mb-20">
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 mb-30">
-                <div class="fact fact-2 abfact-items text-center">
-                    <h1 class="counter-count"><span class="counter">500</span>+</h1>
-                    <span>Happy Clients</span>
-                </div>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 mb-30 ">
-                <div class="fact fact-2 abfact-items text-center ">
-                    <h1 class="counter-count"><span class="counter">20</span>+</h1>
-                    <span>Team Member</span>
-                </div>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 mb-30">
-                <div class="fact fact-2 abfact-items text-center ">
-                    <h1 class="counter-count"><span class="counter">10</span></h1>
-                    <span>Team Partners</span>
-                </div>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 mb-30">
-                <div class="fact fact-2 abfact-items text-center ">
-                    <h1 class="counter-count"><span class="counter">10</span>+</h1>
-                    <span>Agencies</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Ab-fact-area end -->
-
- <!-- intro-area start -->
- <section class="intro-area">
-    <div class="container">
-        <div class="row abintro-top g-0">
-            <div class="col-xxl-6 col-xl-6 col-lg-6 d-flex align-items-center wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-                <div class="section_title_wrapper pl-50 pr-70 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-                    <span class="subtitle">
-                        Our Mission
-                    </span>                       
-                    <h2 class="section-title">
-                        Let us show you what we can do for you.
-                    </h2>
-                    <p class="pt-30 pb-30 ">Sterling Staffing recruitment especially covers a wide range of placements, from skill matching, temporary work, single shift coverage to full-time , Temporary employment in healthcare and social services. We also assess candidates' suitability to your requirements and provide mandatory training in-house. If you need this service, we take it a step further and help you onboard your new hires. Sterling Staffing can provide staff to fill short-term and long-term positions as needed.
-
-                       </p>
-                    
-                       <br>
-                       <span class="subtitle">
-                        Our Vision
-                    </span>    
-                    <p>
-                        Sterling Staffing aim to be the most trusted staffing agency to proivde qualtiy health care services which are evidence based and encourages innovations to your care home.
-                    </p>
-                </div>
-            </div> 
-            <div class="col-xxl-6 col-xl-6 col-lg-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-                <div class="intro-right">
-                    <img src="assets/img/about-us/ab-m.jpg" alt="">
-                    <div class="intro-btn">
-                        <a class="play-btn popup-video" href="https://www.youtube.com/watch?v=1kqEDxGxMwg"><i class="flaticon-play-button"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- intro-area end -->
-<section class="browse-area pt-110 pb-90 grey-soft2-bg" >
-    <div class="container">
-        <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-            <div class="col-xxl-10">
-                <div class="section_title_wrapper text-center mb-50">
-                    <span class="subtitle">
-                        Who Are We?
-                    </span>                       
-                    <h2 class="section-title">
-                        We are Recruitment/Staffing Agency 
-                    </h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 mb-30  wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;"> 
-                <div class="browse-box ">
-                    <div class="browse__wrapper">
-                        <h4 class="browse__wrapper__title mb-25"><a href="coaching.html">Competence and Efficiency</a></h4>
-                        <p class="browse__wrapper__subtitle mb-25">At Sterling Staffing, we hold all of our employees to a very high degree of training. This is something we take great pride in. As this is at the forefront of our organisation, it guarantees that our clients receive the greatest quality and expertise from all of our team.</p>
-                          </div>
-                </div>
-            </div>
-            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 mb-30  wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;"> 
-                <div class="browse-box ">
-                    <div class="browse__wrapper">
-                        <h4 class="browse__wrapper__title mb-25"><a href="coaching.html">Loyalty and Respect</a></h4>
-                        <p class="browse__wrapper__subtitle mb-25">As a business, we take great pride in our commitment to loyalty and respect. This is communicated to every member of our staff team. As a care and support organisation, we believe that being respected and valued contributes to fostering a happy and engaged workplace culture. Your company benefits from this level of ethics.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 mb-30  wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;"> 
-                <div class="browse-box ">
-                    <div class="browse__wrapper">
-                        <h4 class="browse__wrapper__title mb-25"><a href="coaching.html">Equality and Diversity</a></h4>
-                        <p class="browse__wrapper__subtitle mb-25"> Our organisation is multicultural and diversified, and we have workers from many various racial and ethnic origins. Inclusion and valuing a person for who they are is important to us. We make sure that each employee is valued and treated fairly. but also not be Professioned to prejudice on the basis of their gender, race, national origin, sexual orientation, age, or disability.
-                         </p>   
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <input name="cv" class="file_cv" type="file" placeholder="Upload CV" required>
+                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <textarea name="message" class="contact__input txt-area " cols="30" rows="10" placeholder="Message" required></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <button class="theme-btn" type="submit">Submit Now</button>
+                            </div>
+                        </div>
+                    </form>
+                    <p class="ajax-response"></p>
                 </div>
-            </div>
-            
             </div>
         </div>
     </div>
-</section>
+</div> 
+<!-- Contact  area end -->
 
-<section class="featurs-services pt-110 pb-90">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xxl-10">
-                <div class="section_title_wrapper text-center mb-50 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-                    <span class="subtitle">
-                        The following key beliefs serve as the foundation of our company:
-                    </span>                       
-                    <h2 class="section-title">
-                        Our Values 
-                    </h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <ul class="necessary-link mb-40">
-                <li><i class="fal fas fa-solid fa-star"></i><b>Compassion and sympathy:</b> We treat each other with kindness when providing services to others. We are aware that occasionally the road may be difficult and the journey unsteady. We put ourselves in the shoes of those we love and support because of this. This enables us to give these loved ones the kind, considerate care they merit regardless of how they behave on difficult days.</li>
-                <li><i class="fal fas fa-solid fa-star"></i><b>Person-centered service:</b> We prioritise our service consumers' preferences and requests. We accept their decisions and encourage them to live independently as much as possible.</li>
-                <li><i class="fal fas fa-solid fa-star"></i><b>Collaboration and teamwork:</b>Collaboration and teamwork are crucial to making decisions about care for our service users, their families, and other stakeholders, according to us. As a result, we work together with all parties involved, including the family, nurses, doctors, social workers, and others, to create a care plan that will be beneficial in providing these loved ones comfort and joy.</li>
-                <li><i class="fal fas fa-solid fa-star"></i><b>Information and knowledge:</b> We continually train and retrain our employees, keeping them updated about new trends and best practises in assisting and caring for the most vulnerable members of society. giving them the knowledge and information they need to continue to be effective in looking after and assisting our service consumers.</li>
-                <li><i class="fal fas fa-solid fa-star"></i><b>Compliance:</b> We make careful to follow all legal and regulatory guidelines for providing care and support services. We can concentrate on providing care and assistance for our clients.</li>
-                <li><i class="fal fas fa-solid fa-star"></i><b>Comfort and practicality:</b> We provide secure, convenient, and comfortable residential accommodations because we care about the pleasure and comfort of our service users.</li>
-                <li><i class="fal fas fa-solid fa-star"></i><b>Timeliness and Availability:</b> We are always prompt and accessible for our clients, offering them round-the-clock help and attention.</li>
-                <li><i class="fal fas fa-solid fa-star"></i><b>Teamwork:</b> Because our employees are people, we are aware of the danger of burnout. Consequently, in order to keep our employees motivated while they work and to replace them when they become weary, we have established an effective system of support.</li>
-                <li><i class="fal fas fa-solid fa-star"></i><b>Ownership:</b> We are fully accountable for the work we do. When necessary, our management team members, who are care and support specialists with years of expertise, are always willing to step in and provide direct care for our clients.</li>
-                <li><i class="fal fas fa-solid fa-star"></i><b>Technology and innovation:</b> By utilising technology, we continue to discover more effective ways to offer our consumers first-rate service and support. To make sure that our services match (or even surpass) the expectations of our clients, we have developed effective tracking and monitoring systems.</li>
-                
-            </ul>      
-        </div>
-        </div>
-    </div>
-</section>
-<!-- featurs area end here -->
+
+<!-- Contact group info end -->
+
+
+
+
+<!-- abbrand-area end -->
 </main>
 
-<!-- footer-area start -->
+<!-- footer area start -->
 <footer>
     <div class="footer__area footer-bg2 pt-95 pb-70" style="background-image: url(assets/img/footer-bg/footer-bg.jpg);">
         <div class="container">
@@ -519,7 +387,7 @@
         <div class="row align-items-center">
             <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-6">
                 <div class="footer__text">
-                    <p>Copyright ©2023 Sterling Staffing. All Rights Reserved</p>
+                    <p>Copyright ©2023 Sterling Staffing All Rights Reserved</p>
                 </div>
             </div>
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
@@ -539,10 +407,11 @@
     </div>
 </div>
 </footer>
-<!-- footer-area end -->
+<!-- footer area end -->
+<script src="assets/js/main1.js"></script>
 
     <!-- JS here --><script src="assets/js/main1.js"></script>
-    <script src="assets/js/vendor/jquery.min.js"></script>
+    <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/vendor/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/isotope.pkgd.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
@@ -562,5 +431,4 @@
 </body>
 
 
-<!-- /template/Sterling Staffing/Sterling Staffing/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Mar 2023 08:36:27 GMT -->
 </html>
